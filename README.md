@@ -1,3 +1,15 @@
+## 本範本與原始來源的差異（SWPM Workshop 用）
+
+本 repo 為 SWPM Workshop 的教學範本，fork 自 [coffeefuelbump/csv-data-summarizer-claude-skill](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill)。與原始來源的差異只有以下兩項：
+
+- 技能位置搬移：`SKILL.md`、`analyze.py`、`requirements.txt`、`resources/` 搬到 Claude Code 專案技能位置 `.claude/skills/csv-data-summarizer/`，檔案內容不變。下方上游原文中「What's Included」的目錄樹與安裝指令（`pip install -r requirements.txt`）仍以搬移前的根目錄為準，與本 repo 不符，需加上 `.claude/skills/csv-data-summarizer/` 前綴；`SKILL.md`、`resources/README.md`、`analyze.py` 內的相對路徑是相對於技能資料夾寫的，在 `.claude/skills/csv-data-summarizer/` 內執行時仍然成立。上游原文依規則不修改。
+- 新增 `data/`：放清洗後的筆電規格資料 `data/laptops.csv`，來源、授權與修改說明見 `data/README.md`。
+
+授權：上游 README 聲明採 MIT 授權（原 repo 無 LICENSE 檔）；本 repo 的修改同樣以 MIT 提供；`data/` 內資料依原上傳者標示為 Apache-2.0，授權全文見 `data/LICENSE-Apache-2.0.txt`。
+
+公開資料集，僅供演練。
+
+---
 <div align="center">
 
 [![Join AI Community](https://img.shields.io/badge/🚀_Join-AI_Community_(FREE)-4F46E5?style=for-the-badge)](https://www.skool.com/ai-for-your-business)
